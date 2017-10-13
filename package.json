@@ -1,0 +1,49 @@
+{
+  "name": "react-components",
+  "version": "0.0.2",
+  "description": "Reusable React Components",
+  "main": "index.js",
+  "author": "Ioan Ungurean",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "npm run gen:docs",
+    "start": "npm-run-all --parallel start:docs gen:docs-watch",
+    "start:docs": "webpack-dev-server --config devtools/webpack.config",
+    "gen:docs": "node devtools/scripts/generate-component-data.js",
+    "gen:docs-watch": "npm run gen:docs -- --watch",
+    "prebuild:prod": "rimraf public",
+    "build:prod": "webpack -p --config de>vtools/webpack.config --env.environment=production",
+    "preanalysis": "rimraf public | rimraf bundle-analysis-stats.json",
+    "analysis": "webpack -p --config devtools/webpack.config --profile --json > bundle-analysis-stats.json --env.environment=production"
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "xbem": "^0.0.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "chokidar": "^1.7.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-template": "^5.6.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "path": "^0.12.7",
+    "react-docgen": "^2.18.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-chunk-hash": "^0.4.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
