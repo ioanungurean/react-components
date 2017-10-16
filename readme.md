@@ -8,11 +8,11 @@ Also please take a look at the HelloWorld example.
 
 | Package       | Version     |
 | ------------- |-------------|
-| React         | ^15.6.1     |
-| Webpack       | ^3.4.1      |
-| Babel         | ^ES6        |
-| Yarn          | ^0.27.5     |
-| xbem          | ^0.0.6      |
+| React         | ^16.0.0     |
+| Webpack       | ^3.6.0      |
+| Babel         | ^ES7        |
+| Yarn          | ^1.1.0      |
+| xbem          | ^0.0.8      |
 
 #### Utilizing
 
