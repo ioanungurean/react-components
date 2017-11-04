@@ -12,7 +12,7 @@ Also please take a look at the HelloWorld example.
 | Webpack       |
 | Babel         |
 | Yarn          |
-| xbem          |
+| xBEM          |
 
 #### Utilizing
 
