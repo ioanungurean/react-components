@@ -6,13 +6,13 @@ Also please take a look at the HelloWorld example.
 
 #### Base App
 
-| Package       | Version     |
-| ------------- |-------------|
-| React         | ^16.0.0     |
-| Webpack       | ^3.6.0      |
-| Babel         | ^ES7        |
-| Yarn          | ^1.1.0      |
-| xbem          | ^0.0.8      |
+| Package       |
+| ------------- |
+| React         |
+| Webpack       |
+| Babel         |
+| Yarn          |
+| xbem          |
 
 #### Utilizing
 
